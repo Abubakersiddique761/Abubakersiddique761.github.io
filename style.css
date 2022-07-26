@@ -5,14 +5,16 @@
     transition: all .2s ease;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    user-select: none;
 }
-.top_section{
+
+.top_section {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
@@ -20,10 +22,9 @@ body{
     flex-direction: column;
     /* background-color: blue; */
     /* background: linear-gradient(0deg, rgba(255,255,255) 0%, rgb(0, 0, 255) 100%);; */
-    user-select: none;
 }
 
-.top_section h1{
+.top_section h1 {
     text-transform: uppercase;
     font-size: 4rem;
     color: black;
@@ -31,29 +32,29 @@ body{
     font-weight: bolder;
 }
 
-.top_section code{
+.top_section code {
     /* background-color: black; */
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 0%, rgba(0,1,255,0.8662815467984069) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 0, 0, 1) 0%, rgba(0, 1, 255, 0.8662815467984069) 100%);
     padding: .4rem .8rem;
     color: white;
     border-radius: 5px;
     margin: 0px;
 }
 
-.top_section code:hover{
+.top_section code:hover {
     box-shadow: 0 0 8px black;
 }
 
-.top_section code i{
+.top_section code i {
     margin: 0 .4rem;
 }
 
-.top_section code a{
+.top_section code a {
     color: white;
     text-decoration: none;
 }
 
-.top_section p{
+.top_section p {
     margin: 0px !important;
     margin-top: 12px !important;
 }
@@ -66,7 +67,7 @@ body{
 
 /* Apps section Editing */
 
-.apps{
+.apps {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -83,19 +84,19 @@ body{
     margin: .5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     padding: .8rem;
-    text-align: center;
+    /* text-align: center; */
     background-color: whitesmoke;
     box-shadow: 0 0 5px darkgray;
 }
 
-/* .app:hover{
+.app:hover {
     box-shadow: 0 0 8px gray;
-} */
+}
 
-.app .title{
+.app .title {
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -107,17 +108,17 @@ body{
     margin: .3rem 0;
 }
 
-.app .btns a{
+.app .btns a {
     text-decoration: none;
     color: black;
     border: 1px solid black;
     padding: .3rem .8rem;
     font-size: 12px;
     border-radius: 2rem;
-    margin: 0 .2rem;
+    margin-right: .4rem;
 }
 
-.app .btns a:hover{
+.app .btns a:hover {
     background-color: black;
     color: white;
 }
@@ -126,17 +127,25 @@ body{
     margin: 0 .3rem;
 }
 
-.app .btns a:last-child:hover{
+.app .btns a:last-child:hover {
     border-color: blue;
     background-color: blue;
 }
 
-.app img{
-    max-width: 250px;
-    border-radius: 8px;
-    margin-top: .8rem;
+.app .btns a:first-child:hover {
+    border-color: green;
+    background-color: green;
 }
 
-.app:hover img{
-    box-shadow: 0 0 8px gray;
+.app img {
+    max-width: 100px;
+    border-radius: 8px;
+    margin-top: .8rem;
+    margin-right: .8rem;
+}
+
+.app .img_section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
