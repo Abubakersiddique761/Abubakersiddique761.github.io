@@ -31,10 +31,6 @@ body{
     font-weight: bolder;
 }
 
-.top_section h1:hover{
-    letter-spacing: 2px;
-}
-
 .top_section code{
     /* background-color: black; */
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 0%, rgba(0,1,255,0.8662815467984069) 100%);
