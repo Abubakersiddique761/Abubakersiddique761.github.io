@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all .2s ease;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.top_section{
+    width: 100vw;
+    height: 80vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: blue; */
+    /* background: linear-gradient(0deg, rgba(255,255,255) 0%, rgb(0, 0, 255) 100%);; */
+    user-select: none;
+}
+
+.top_section h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.top_section h1:hover{
+    letter-spacing: 2px;
+}
+
+.top_section code{
+    /* background-color: black; */
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 0%, rgba(0,1,255,0.8662815467984069) 100%);
+    padding: .4rem .8rem;
+    color: white;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.top_section code:hover{
+    box-shadow: 0 0 8px black;
+}
+
+.top_section code i{
+    margin: 0 .4rem;
+}
+
+.top_section code a{
+    color: white;
+    text-decoration: none;
+}
+
+.top_section p{
+    margin: 0px !important;
+    margin-top: 12px !important;
+}
+
+.top_section span {
+    text-align: center;
+}
+
+
+
+/* Apps section Editing */
+
+.apps{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+.app {
+    max-width: 300px;
+    /* border: 1px solid red; */
+    border-radius: 7px;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: .8rem;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px darkgray;
+}
+
+.app:hover{
+    box-shadow: 0 0 8px gray;
+}
+
+.app .title{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.app .btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: .3rem 0;
+}
+
+.app .btns a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: .3rem .8rem;
+    font-size: 12px;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+}
+
+.app .btns a:hover{
+    background-color: black;
+    color: white;
+}
+
+.app .btns a i {
+    margin: 0 .3rem;
+}
+
+.app .btns a:last-child:hover{
+    border-color: blue;
+    background-color: blue;
+}
