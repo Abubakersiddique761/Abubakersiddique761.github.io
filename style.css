@@ -91,9 +91,9 @@ body{
     box-shadow: 0 0 5px darkgray;
 }
 
-.app:hover{
+/* .app:hover{
     box-shadow: 0 0 8px gray;
-}
+} */
 
 .app .title{
     font-weight: bold;
@@ -129,4 +129,14 @@ body{
 .app .btns a:last-child:hover{
     border-color: blue;
     background-color: blue;
+}
+
+.app img{
+    max-width: 250px;
+    border-radius: 8px;
+    margin-top: .8rem;
+}
+
+.app:hover img{
+    box-shadow: 0 0 8px gray;
 }
