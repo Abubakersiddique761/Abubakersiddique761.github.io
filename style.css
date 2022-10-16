@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    transition: all .2s ease;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #CCD6F6;
     transition: all .2s ease;
 }
 
@@ -10,60 +15,24 @@ body {
     height: 100vh;
     overflow-x: hidden;
     user-select: none;
+    background-color: #0A192F;
+    position: relative;
+    overflow: hidden;
+}
+
+.particles{
+    position: absolute !important;
+    width: 100vw;
+    height: 100vh;
 }
 
 .top_section {
     width: 100vw;
     height: 80vh;
     /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     /* background-color: blue; */
     /* background: linear-gradient(0deg, rgba(255,255,255) 0%, rgb(0, 0, 255) 100%);; */
 }
-
-.top_section h1 {
-    text-transform: uppercase;
-    font-size: 4rem;
-    color: black;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.top_section code {
-    /* background-color: black; */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 0, 0, 1) 0%, rgba(0, 1, 255, 0.8662815467984069) 100%);
-    padding: .4rem .8rem;
-    color: white;
-    border-radius: 5px;
-    margin: 0px;
-}
-
-.top_section code:hover {
-    box-shadow: 0 0 8px black;
-}
-
-.top_section code i {
-    margin: 0 .4rem;
-}
-
-.top_section code a {
-    color: white;
-    text-decoration: none;
-}
-
-.top_section p {
-    margin: 0px !important;
-    margin-top: 12px !important;
-}
-
-.top_section span {
-    text-align: center;
-}
-
-
 
 /* Apps section Editing */
 
@@ -149,4 +118,43 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.name {
+    padding: 4rem 2rem;
+}
+
+.name h1 {
+    color: #8892B0;
+    font-weight: bolder;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+}
+.buttons button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    z-index: 100;
+    cursor: pointer;
+    margin: .4rem 0;
+    padding: .5rem;
+    width: 250px;
+    border-radius: 4px;
+    text-align: justify;
+}
+
+.buttons button:hover {
+    background-color: #0b0e1358;
+    word-spacing: 10px;
+}
+
+.buttons i {
+    color: white;
 }
