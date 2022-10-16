@@ -229,7 +229,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.project:nth-child(even){
+.project:nth-child(even) {
     float: right;
 }
 
@@ -267,7 +267,7 @@ body {
     transform: translate(0%, -10%);
     border-radius: 5px;
     padding: .8rem;
-    width: 140% !important;
+    width: 140%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -302,5 +302,33 @@ body {
 @media screen and (max-width: 650px) {
     .social_buttons {
         grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project:nth-child(even) {
+        float: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .project .details .proj_det {
+        transform: none;
+        width: auto;
+    }
+    .project {
+        flex-direction: column;
     }
 }
