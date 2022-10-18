@@ -8,6 +8,7 @@
     font-family: 'Ubuntu Mono', monospace;
     color: #CCD6F6;
     transition: all .5s ease !important;
+    z-index: 1000;
 }
 
 body {
@@ -21,10 +22,10 @@ body {
 }
 
 .particles {
-    position: fixed !important;
+    position: absolute !important;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
+    z-index: 0;
 }
 
 .top_section {
@@ -35,94 +36,8 @@ body {
     /* background: linear-gradient(0deg, rgba(255,255,255) 0%, rgb(0, 0, 255) 100%);; */
 }
 
-/* Apps section Editing */
-
-.apps {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    padding: 1rem;
-    padding-bottom: 3rem;
-}
-
-.app {
-    max-width: 300px;
-    /* border: 1px solid red; */
-    border-radius: 7px;
-    margin: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: .8rem;
-    /* text-align: center; */
-    background-color: whitesmoke;
-    box-shadow: 0 0 5px darkgray;
-}
-
-.app:hover {
-    box-shadow: 0 0 8px gray;
-}
-
-.app .title {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.app .btns {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: .3rem 0;
-}
-
-.app .btns a {
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    padding: .3rem .8rem;
-    font-size: 12px;
-    border-radius: 2rem;
-    margin-right: .4rem;
-}
-
-.app .btns a:hover {
-    background-color: black;
-    color: white;
-}
-
-.app .btns a i {
-    margin: 0 .3rem;
-}
-
-.app .btns a:last-child:hover {
-    border-color: blue;
-    background-color: blue;
-}
-
-.app .btns a:first-child:hover {
-    border-color: green;
-    background-color: green;
-}
-
-.app img {
-    max-width: 100px;
-    border-radius: 8px;
-    margin-top: .8rem;
-    margin-right: .8rem;
-}
-
-.app .img_section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .name {
-    padding: 6rem 3rem;
+    padding: 6rem 3rem 1rem 3rem;
 }
 
 .name h1 {
@@ -153,8 +68,7 @@ body {
     text-decoration: none;
     color: #CCD6F6;
     background: #101338e1;
-    box-shadow: 10px 10px 20px #0d102e,
-        -10px -10px 20px #131642;
+    box-shadow: 0px 0px 10px 2px #0d102e;
 }
 
 .buttons a:hover {
@@ -196,8 +110,7 @@ body {
     text-decoration: none;
     color: #CCD6F6;
     background: #101338e1;
-    box-shadow: 10px 10px 20px #0d102e,
-        -10px -10px 20px #131642;
+    box-shadow: 0px 0px 10px 2px #0d102e;
 }
 
 .social_buttons a:hover {
@@ -308,6 +221,7 @@ body {
     color: white;
     z-index: 100;
     text-decoration: none;
+    box-shadow: 0px 0px 10px 2px #0d102e;
 }
 
 .projects .button:hover{
