@@ -44,7 +44,7 @@ body {
     position: absolute !important;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .top_section {
@@ -60,7 +60,7 @@ body {
 }
 
 .name h1 {
-    color: #002E94;
+    color: #1D1CE5;
     font-weight: bolder;
     font-size: 4rem;
 }
