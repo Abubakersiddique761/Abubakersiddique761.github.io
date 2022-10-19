@@ -4,18 +4,35 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    transition: all .2s ease;
+    transition: all .2s ease !important;
     font-family: 'Ubuntu Mono', monospace;
-    color: #CCD6F6;
-    transition: all .5s ease !important;
     z-index: 1000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
 }
 
 body {
     width: 100vw;
     overflow-x: hidden;
-    user-select: none;
-    background-color: #101338;
+    /* background-color: #d3001c; */
+    /* background-color: #101338; */
     position: relative;
     overflow: hidden;
     overflow-y: auto;
@@ -25,7 +42,8 @@ body {
     position: absolute !important;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    /* background-color: #CF0A0A; */
+    /* z-index: -1; */
 }
 
 .top_section {
@@ -41,8 +59,23 @@ body {
 }
 
 .name h1 {
-    color: #0194ED;
+    color: #002E94;
     font-weight: bolder;
+    font-size: 4rem;
+}
+
+.name::selection, .name div::selection, .name h4::selection , .name li::selection {
+    background-color: black;
+    color: white;
+}
+
+.name h1::selection{
+    background-color: #002E94;
+    color: white;
+}
+
+.name h4 {
+    font-weight: bold;
 }
 
 /* Buttons */
@@ -52,6 +85,7 @@ body {
     align-items: flex-start;
     flex-direction: column;
     padding: 3rem;
+    user-select: none !important;
 }
 
 .buttons a {
@@ -66,13 +100,14 @@ body {
     border-radius: 4px;
     text-align: justify;
     text-decoration: none;
-    color: #CCD6F6;
-    background: #101338e1;
-    box-shadow: 0px 0px 10px 2px #0d102e;
+    box-shadow: 0px 0px 5px 1px #c3c3c3;
+    color: black;
+    background-color: #ffffff;
 }
 
 .buttons a:hover {
-    background-color: #d3003c7f;
+    color: white;
+    background: black;
     word-spacing: 10px;
 }
 
@@ -84,8 +119,19 @@ body {
 }
 
 .social h1 {
-    color: #d3003c;
+    color: #47B5FF;
+    font-size: 4rem;
     font-weight: bolder;
+}
+
+.social h1::selection {
+    background-color: #47B5FF;
+    color: black;
+}
+
+.social div::selection {
+    background-color: white;
+    color: #002E94;
 }
 
 
@@ -94,6 +140,7 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     padding: 1rem;
+    user-select: none;
 }
 
 .social_buttons a {
@@ -108,13 +155,14 @@ body {
     border-radius: 4px;
     text-align: justify;
     text-decoration: none;
-    color: #CCD6F6;
-    background: #101338e1;
-    box-shadow: 0px 0px 10px 2px #0d102e;
+    color: white;
+    background: #083AA9;
+    /* box-shadow: 0px 0px 5px 1px #041a4b; */
 }
 
 .social_buttons a:hover {
-    background-color: #0194ED7f;
+    background-color: white;
+    color: black;
     word-spacing: 10px;
 }
 
@@ -124,10 +172,24 @@ body {
     width: 100vw;
     min-height: 100vh;
     padding: 3rem;
+    background-color: #D1512D;
+    color: #FFFFFF;
+}
+
+.projects div::selection, .platform::selection , .projects code::selection{
+    background-color: black;
+    color: white;
 }
 
 .projects h1 {
-    color: #d3003c;
+    color: #411530;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.projects h1::selection{
+    background-color: #411530;
+    color: #D1512D;
 }
 
 .projects h4 {
@@ -151,6 +213,8 @@ body {
     border-radius: 8px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+    transition: none !important;
+    user-select: none !important;
 }
 
 .project img:hover {
@@ -176,7 +240,7 @@ body {
 }
 
 .project .details .proj_det {
-    background-color: #15243d;
+    background-color: #F5C7A9;
     transform: translate(0%, -10%);
     border-radius: 5px;
     padding: .8rem;
@@ -186,7 +250,7 @@ body {
     align-items: flex-end;
     flex-direction: column;
     text-align: right;
-    color: #8892B0;
+    color: #411530;
 }
 
 .project .platform {
@@ -209,23 +273,31 @@ body {
 
 .project .language code {
     margin-left: .4rem;
-    color: #CCD6F6;
+    color: #411530;
 }
 
-.projects .button{
+.projects .button {
     border: none;
     outline: none;
     padding: .5rem 1rem;
     border-radius: 3px;
-    background-color: #0d102e;
-    color: white;
+    background: white;
+    color: #411530;
     z-index: 100;
     text-decoration: none;
-    box-shadow: 0px 0px 10px 2px #0d102e;
+    user-select: none !important;
 }
 
-.projects .button:hover{
-    background-color: #d3003c;
+.projects .button:hover {
+    box-shadow: 0 0 5px 1px #090307;
+    color: white;
+    background-color: #11060d;
+}
+
+/* Coloring Each Idiniduals */
+.sec2 {
+    background-color: #002E94;
+    color: white !important;
 }
 
 @media screen and (max-width: 650px) {
@@ -257,10 +329,12 @@ body {
         transform: none;
         width: auto;
     }
+
     .project {
         flex-direction: column;
     }
-    .project img{
+
+    .project img {
         max-width: 100%;
         margin-bottom: .5rem;
     }
