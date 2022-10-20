@@ -263,7 +263,7 @@ body {
 .project .links a {
     cursor: pointer;
     padding: .3rem;
-    font-size: 1.5rem;
+    font-size: .9rem;
     color: #D1512D;
     transition: none !important;
 }
