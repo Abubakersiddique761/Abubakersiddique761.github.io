@@ -6,6 +6,8 @@
     box-sizing: border-box;
     transition: all .2s ease !important;
     font-family: 'Ubuntu Mono', monospace;
+    font-size: .9vw;
+
 }
 
 ::-webkit-scrollbar {
@@ -19,7 +21,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #080311;
+    background: #262324;
     border: 3px solid white;
 }
 
@@ -39,33 +41,35 @@ body {
     overflow-y: auto;
 }
 
-.particles {
-    position: absolute !important;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-}
-
 .top_section {
     width: 100vw;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     /* border: 1px solid red; */
     /* background-color: blue; */
     /* background: linear-gradient(0deg, rgba(255,255,255) 0%, rgb(0, 0, 255) 100%);; */
 }
 
 .name {
-    padding: 6rem 3rem 1rem 3rem;
+    padding: 1rem 3rem;
+    color: #262324;
 }
 
 .name h1 {
-    color: #1D1CE5;
+    color: #262324;
     font-weight: bolder;
-    font-size: 4rem;
+    font-size: 5vw;
+}
+
+.name h1 span{
+    font-size: 5vw;
 }
 
 .name::selection, .name div::selection, .name h4::selection , .name li::selection {
-    background-color: black;
+    background-color: #262324;
     color: white;
 }
 
@@ -76,6 +80,7 @@ body {
 
 .name h4 {
     font-weight: bold;
+    font-size: 1.5vw;
 }
 
 /* Buttons */
@@ -96,18 +101,18 @@ body {
     margin: .4rem 0;
     padding: .5rem;
     padding-left: 1rem;
-    width: 250px;
+    width: 10vw;
     border-radius: 2rem;
     text-align: justify;
     text-decoration: none;
     /* box-shadow: 0px 0px 5px 1px #c3c3c3; */
-    border: 1px solid black;
-    color: black;
+    border: 1px solid #262324;
+    color: #262324;
 }
 
 .buttons a:hover {
     color: white;
-    background: black;
+    background: #262324;
     word-spacing: 10px;
 }
 
@@ -119,26 +124,28 @@ body {
 }
 
 .social h1 {
-    color: #47B5FF;
+    color: #262324;
     font-size: 4rem;
     font-weight: bolder;
 }
 
 .social h1::selection {
-    background-color: #47B5FF;
-    color: black;
+    background-color: #262324;
+    color: white;
 }
 
 .social div::selection {
-    background-color: white;
-    color: #002E94;
+    background-color: #262324;
+    color: white;
 }
 
 
 /* Buttons */
 .social_buttons {
+    width: fit-content;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
+    grid-gap: .3vw;
     padding: 1rem;
     user-select: none;
 }
@@ -148,21 +155,23 @@ body {
     outline: none;
     background-color: transparent;
     cursor: pointer;
-    margin: .4rem 0;
-    padding: .5rem;
-    width: 250px;
+    padding: .5rem 1.5rem;
+    width: 15vw;
     border-radius: 4px;
     text-align: justify;
     text-decoration: none;
     color: white;
-    background: #083AA9;
+    background: #262324;
     /* box-shadow: 0px 0px 5px 1px #041a4b; */
     transition: all .2s ease !important;
+    border: 1px solid transparent;
+    border-radius: 2rem;
 }
 
 .social_buttons a:hover {
     background-color: white;
-    color: black;
+    color: #262324;
+    border: 1px solid #262324;
     word-spacing: 10px;
 }
 
@@ -170,30 +179,31 @@ body {
 /* Projects */
 .projects {
     width: 100vw;
-    min-height: 100vh;
+    min-height: fit-content;
     padding: 3rem;
-    background-color: #D1512D;
-    color: #FFFFFF;
+    background-color: white;
+    color: #262324;
 }
 
 .projects div::selection, .platform::selection , .projects code::selection{
-    background-color: black;
+    background-color: #262324;
+    color: white;
+}
+
+.projects div::selection, .platform::selection , .projects code::selection{
+    background-color: #262324;
     color: white;
 }
 
 .projects h1 {
-    color: #411530;
+    color: #262324;
     font-size: 4rem;
     font-weight: bolder;
 }
 
 .projects h1::selection{
-    background-color: #411530;
-    color: #D1512D;
-}
-
-.projects h4 {
-    color: #8892B0;
+    background-color: #262324;
+    color: white;
 }
 
 .project {
@@ -214,6 +224,7 @@ body {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     user-select: none !important;
+    box-shadow: 0 0 20px gray;
 }
 
 .project img:hover {
@@ -239,8 +250,9 @@ body {
 }
 
 .project .details .proj_det {
-    background-color: #F5C7A9;
+    background-color: #262324;
     transform: translate(0%, -10%);
+    color: white;
     border-radius: 5px;
     padding: .8rem;
     width: 140%;
@@ -249,7 +261,6 @@ body {
     align-items: flex-end;
     flex-direction: column;
     text-align: right;
-    color: #411530;
 }
 
 .project .platform {
@@ -258,18 +269,20 @@ body {
 
 .project .links {
     padding: .3rem;
+    user-select: none;
 }
 
 .project .links a {
     cursor: pointer;
     padding: .3rem;
     font-size: .9rem;
-    color: #D1512D;
+    color: gray;
     transition: none !important;
+    user-select: none;
 }
 
 .project .links a:hover{
-    color: black;
+    color: white;
 }
 
 .project .language {
@@ -278,7 +291,7 @@ body {
 
 .project .language code {
     margin-left: .4rem;
-    color: #411530;
+    color: lightgray;
 }
 
 .projects .button {
@@ -286,16 +299,16 @@ body {
     outline: none;
     padding: .5rem 1rem;
     border-radius: 3px;
-    background: white;
-    color: #411530;
+    color: white;
+    background-color: #262626;
     text-decoration: none;
     user-select: none !important;
 }
 
 .projects .button:hover {
     box-shadow: 0 0 5px 1px #090307;
-    color: white;
-    background-color: #11060d;
+    background: white;
+    color: #262324
 }
 
 .side_buttons{
@@ -327,12 +340,6 @@ body {
 .side_buttons a:hover{
     color: black;
     background: white;
-}
-
-/* Coloring Each Idiniduals */
-.sec2 {
-    background-color: #002E94;
-    color: white !important;
 }
 
 @media screen and (max-width: 650px) {
