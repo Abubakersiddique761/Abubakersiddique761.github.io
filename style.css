@@ -324,7 +324,7 @@ body {
     transform: translate(0%, -10%);
     color: #0B0C10;
     border-radius: 5px;
-    padding: .8rem;
+    padding: 1rem;
     width: 140%;
     display: flex;
     justify-content: flex-end;
