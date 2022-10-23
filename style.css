@@ -149,6 +149,41 @@ body {
     color: white;
 }
 
+.lay_buttons{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #A8E890;
+    padding: .3rem;
+    border-radius: 5px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.lay_buttons a {
+    padding: .8rem 1rem;
+    cursor: pointer !important;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: .3rem;
+    color: black;
+    text-decoration: none;
+    background-color: #A8E890;
+}
+
+.lay_buttons a:hover {
+    word-spacing: 10px;
+}
+
+.lay_buttons a.active {
+    background: #0B0C10;
+    color: white;
+}
+
 /* Social Section Editing */
 .contact {
     display: flex;
@@ -376,7 +411,6 @@ body {
     }
 
     .name {
-        padding: 2rem;
         width: 100%;
     }
 
@@ -399,6 +433,10 @@ body {
 
     .side_buttons {
         display: none;
+    }
+
+    .lay_buttons {
+        display: flex;
     }
 
 }
