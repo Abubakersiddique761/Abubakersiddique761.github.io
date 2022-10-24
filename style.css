@@ -239,12 +239,6 @@ body {
 
 
 /* Projects */
-.proj_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .projects {
     width: 100vw;
     min-height: 100vh;
@@ -364,6 +358,101 @@ body {
     color: black;
 }
 
+.other_proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.other_projects {
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.proj_v2 {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #262324;
+    border: 1px solid #262324;
+}
+
+.proj_v2 .top_v2 i {
+    font-size: 2rem;
+}
+
+.proj_v2:hover {
+    transform: translateY(-5px);
+}
+
+.proj_v2:hover .top_v2 i {
+    color: #EA0F1E;
+}
+
+.proj_v2 .proj_def {
+    margin: .4rem 0;
+}
+
+.proj_v2 .links {
+    padding: .3rem;
+    user-select: none;
+}
+
+.proj_v2 .language code {
+    margin-right: .4rem;
+    /* color: lightgray; */
+}
+
+.proj_v2 .proj_name {
+    font-size: 1.5rem;
+    color: #EA0F1E;
+    font-weight: bolder;
+}
+
+.proj_v2 .proj_name::selection {
+    background-color: #EA0F1E;
+    color: #262324;
+}
+
+.proj_v2 .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    user-select: none;
+    width: 100%;
+    margin-top: .4rem;
+}
+
+.proj_v2 .buttons a {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    width: 48%;
+    font-size: .8rem;
+    border-radius: 4px;
+    text-align: justify;
+    text-decoration: none;
+    color: white;
+    background: #262324;
+    /* box-shadow: 0px 0px 5px 1px #041a4b; */
+    transition: all .2s ease !important;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+}
+
+.proj_v2 .buttons a:hover {
+    background-color: #EA0F1E;
+    color: white;
+    border: 1px solid #EA0F1E;
+    word-spacing: 10px;
+}
 
 @media screen and (max-width: 650px) {
     .social_buttons {
@@ -372,6 +461,11 @@ body {
 }
 
 @media screen and (max-width: 1300px) {
+
+    .other_projects {
+        grid-template-columns: auto auto;
+    }
+
     .projects {
         display: flex;
         justify-content: center;
@@ -433,5 +527,9 @@ body {
     .project img {
         max-width: 100%;
         margin-bottom: .5rem;
+    }
+
+    .other_projects {
+        grid-template-columns: auto;
     }
 }
