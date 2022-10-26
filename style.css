@@ -279,15 +279,12 @@ body {
 .project img {
     max-width: 60%;
     border-radius: 8px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
     user-select: none !important;
-    background-color: #EA0F1E;
+    border: 1px solid transparent;
 }
 
 .project img:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
+    border-color: white;
 }
 
 .project .details {
@@ -343,6 +340,7 @@ body {
     color: gray;
     transition: none !important;
     user-select: none;
+    text-decoration: none;
 }
 
 .project .links a:hover {
@@ -513,13 +511,45 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    body {
+        font-size: .9rem;
+    }
     .project .details .proj_det {
         transform: none;
-        width: auto;
+        width: 75%;
+        height: auto;
+    }
+
+    .projects h1, .social h1{
+        font-size: 3rem;
+    }
+
+    .project .content {
+        display: none;
+    }
+
+    .project .language {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project .details {
+        width: 100%;
+        flex-direction: column-reverse;
+        transform: translate(10px, -50px);
+    }
+
+    .project .proj_det {
+        padding: .2rem;
+    }
+
+    .project .proj_name {
+        margin: 0 !important;
     }
 
     .project {
         flex-direction: column;
+        width: 100%;
     }
 
     .project img {
@@ -528,6 +558,7 @@ body {
     }
 
     .other_projects {
+        width: 100% !important;
         grid-template-columns: auto;
     }
 }
