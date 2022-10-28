@@ -41,15 +41,6 @@ body {
     background: #0B0C10;
 }
 
-.particle {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-    background: #0B0C10;
-    display: none;
-}
-
 .top_section {
     width: 100vw;
     min-height: 100vh;
@@ -246,6 +237,17 @@ body {
     color: white;
 }
 
+.all_projects{
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
 .projects div::selection,
 .platform::selection,
 .projects code::selection {
@@ -256,6 +258,7 @@ body {
 .projects h1 {
     color: #EA0F1E;
     font-size: 4rem;
+    margin-top: 2rem;
     font-weight: bolder;
 }
 
@@ -267,9 +270,13 @@ body {
 .project {
     width: 60vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
+}
+
+.all_projects .project {
+    width: 40vw;
 }
 
 .project:nth-child(odd) {
@@ -281,10 +288,7 @@ body {
     border-radius: 8px;
     user-select: none !important;
     border: 1px solid transparent;
-}
-
-.project img:hover {
-    border-color: white;
+    box-shadow: 0 0 10px #060608;
 }
 
 .project .details {
@@ -311,9 +315,7 @@ body {
 }
 
 .project .details .proj_det {
-    background-color: white;
     transform: translate(0%, -10%);
-    color: #0B0C10;
     border-radius: 5px;
     padding: 1rem;
     width: 140%;
@@ -322,6 +324,13 @@ body {
     align-items: flex-end;
     flex-direction: column;
     text-align: right;
+    border: 1px solid transparent;
+    background: #262324;
+    color: white;
+}
+
+.project:hover .proj_det {
+    border-color: white;
 }
 
 .project .platform {
@@ -344,7 +353,7 @@ body {
 }
 
 .project .links a:hover {
-    color: black;
+    color: white;
 }
 
 .project .language {
@@ -353,7 +362,7 @@ body {
 
 .project .language code {
     margin-left: .4rem;
-    color: black;
+    color: white;
 }
 
 .other_proj {
@@ -367,7 +376,7 @@ body {
 .other_projects {
     width: 70%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
 }
@@ -419,7 +428,7 @@ body {
 
 .proj_v2 .buttons {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     user-select: none;
     width: 100%;
     margin-top: .4rem;
@@ -441,6 +450,7 @@ body {
     transition: all .2s ease !important;
     border: 1px solid transparent;
     border-radius: 2rem;
+    width: 100%;
 }
 
 .proj_v2 .buttons a:hover {
@@ -448,6 +458,39 @@ body {
     color: white;
     border: 1px solid #EA0F1E;
     word-spacing: 10px;
+}
+
+.projects .more{
+    background-color: #ea0f1e3d;
+    text-decoration: none;
+    color: white;
+    padding: .5rem 3rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid #EA0F1E;
+}
+
+.projects .more:hover {
+    background: #EA0F1E;
+}
+
+.projects .back{
+    background-color: #2623243d;
+    text-decoration: none;
+    color: white;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    border: 1px solid #262324;
+}
+
+.projects .back:hover {
+    background: #262626;
+}
+
+@media screen and (max-width: 1500px) {
+    .all_projects .project {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 650px) {
