@@ -535,7 +535,7 @@ body {
     }
 
     .project .proj_det {
-        padding: .2rem;
+        padding: .5rem !important;
     }
 
     .project .proj_name {
